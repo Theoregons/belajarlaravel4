@@ -363,11 +363,12 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid text-dark">
+                    @include('flashmessage')
                     @yield('main')
                 </div>
             </div>
             <!-- End of Main Content -->
-              
+
             <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
