@@ -15,6 +15,14 @@
             <label for="exampleInputEmail1">Alamat</label>
             <input type="text" class="form-control @error('alamat') is-invalid @enderror" name="alamat"  value="{{ old('alamat') }}">
         </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Sekolah</label>
+            <select class="form-control" name="sekolah_id">
+                @foreach ($sekolah as $item)
+                    <option value="{{$item->id}}">{{$item->nama_sekolah}}</option>
+                @endforeach
+            </select>
+        </div>
         <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 @endsection
