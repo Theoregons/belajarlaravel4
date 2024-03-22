@@ -71,7 +71,7 @@ class SiswaController extends Controller
         $validator = $request->validate([
             'nis' => 'required|integer',
             'nama' => 'required',
-            'alamat' => 'required|string',
+            'alamat' => 'required|string', 
             'sekolah_id' => 'integer'
         ]);
 
